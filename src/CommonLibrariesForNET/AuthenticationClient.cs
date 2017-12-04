@@ -24,7 +24,7 @@ namespace Salesforce.Common
         {
         }
 
-        public AuthenticationClient(HttpClient httpClient)
+        public AuthenticationClient(HttpClient httpClient, ServiceConfiguration configuration)
         {
             if (httpClient == null) throw new ArgumentNullException("httpClient");
 
